@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "mlcli"
+version = "0.1.0"
+description = ""
+authors = ["Brendan Veranth <brendan@veranth.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+jupyterlab = "^0.35.0"
+awscli = "^1.16"
+cleo = "^0.6.8"
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.8"
+
+[tool.poetry.scripts]
+ml = "mlcli.driver:main"
